@@ -1,8 +1,12 @@
 #
-#
-#
+# Created by David Clark on 12/06/2023
+# 
 #
 import re
+
+
+
+
 with open("input.txt", "r") as f:
     lines = f.readlines()
     new_lines = ' '.join(lines).replace('\n','').split()
@@ -15,6 +19,7 @@ def find_first_last_occurrences(lines):
     for line in new_lines:
         # Find all occurrences of numbers in the string
         numbers = re.findall(r'\d', line)
+        print(numbers)
 
         if numbers:
             # Extract the first and last occurrences of a number
@@ -34,3 +39,6 @@ sum = 0
 for occurrence in occurrences:
     sum = sum + int(occurrence)
 print(sum)
+
+
+
