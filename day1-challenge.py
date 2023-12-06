@@ -6,7 +6,6 @@ import re
 with open("input.txt", "r") as f:
     lines = f.readlines()
     new_lines = ' '.join(lines).replace('\n','').split()
-    print(new_lines)
 
 def find_first_last_occurrences(lines):
 
@@ -35,4 +34,3 @@ sum = 0
 for occurrence in occurrences:
     sum = sum + int(occurrence)
 print(sum)
-print(occurrences)
