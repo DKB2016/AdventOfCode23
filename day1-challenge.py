@@ -10,10 +10,11 @@ import re
 with open("input.txt", "r") as f:
     lines = f.readlines()
     new_lines = ' '.join(lines).replace('\n','').split()
+# for part 2, TBD
+numChars = ['one','two','three','four','five','six','seven','eight','nine']
+
 
 def find_first_last_occurrences(lines):
-
-        
     results = []
 
     for line in new_lines:
